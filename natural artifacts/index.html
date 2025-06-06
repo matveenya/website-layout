@@ -6,6 +6,128 @@
     <title>Природные артефакты</title>
 </head>
 <body>
+    <div class="container">
 
+        <header class="header">
+            <img class="header__logo" src="images/logo.png" alt="logo">
+            <nav class="header__navigation navigation">
+            <ul class="header__list list">
+                <li class="header__item item">
+                    <a class="header__link link" href="#">Каталог</a>
+                </li>
+                <li class="header__item item">
+                    <a class="header__link link" href="#">Галерея</a>
+                </li>
+                <li class="header__item item">
+                    <a class="header__link link" href="#">О лаборатории</a>
+                </li>
+                <li class="header__item item">
+                    <a class="header__link link" href="#">Контакты</a>
+                </li>
+            </ul>
+            </nav>
+            <div class="header__interactive interactive">
+                <button class="header__search search">
+                    <img src="images/search.png" alt="search">
+                </button>
+                <button class="header__exit exit">
+                    <img src="images/log-in.png" alt="exit">
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main__intro">
+                <h1 class="main__title">Крупнейшая коллекция природных артефактов</h1>
+                <p class="main__text">Являясь всего лишь частью общей картины, интерактивные прототипы, 
+                    которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
+                <div class="main__research-block intro__research-block research-block">
+                    <a class="main__research-link intro__research-link research-link" href="#">Исследовать</a>
+                    <img class="main__research-icon intro__research-icon research-icon" src="images/arrow-right.png" alt="link-continue">
+                </div>
+            </section>
+
+            <section class="main__info-cards">
+                <div class="wrapper">
+                    <article class="main__card card">
+                        <img class="main__card-img card-img" src="images/card1.png" alt="flower">
+                        <h3 class="main__card-title card-title">Fig. 1 (plant)</h3>
+                        <p class="main__card-description card-description">Имеется спорная точка зрения, гласящая примерно следующее: 
+                        активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+                        <button class="main__card-button card-button">Подробнее</button>
+                    </article>
+                    <article class="main__card card">
+                        <img class="main__card-img card-img" src="images/card2.png" alt="flower">
+                        <h3 class="main__card-title card-title">Fig. 2 (flower)</h3>
+                        <p class="main__card-description card-description">Прежде всего, синтетическое тестирование влечет за собой процесс 
+                            внедрения и модернизации условий.</p>
+                        <button class="main__card-button card-button">Подробнее</button>
+                    </article>
+                    <article class="main__card card">
+                        <img class="main__card-img card-img" src="images/card3.png" alt="flower">
+                        <h3 class="main__card-title card-title">Fig. 3 (leaf)</h3>
+                        <p class="main__card-description card-description">Лишь непосредственные участники прогресса неоднозначны и
+                             будут в равной степени предоставлены сами себе для работы.</p>
+                        <button class="main__card-button card-button">Подробнее</button>
+                    </article>
+                    <article class="main__card card">
+                        <img class="main__card-img card-img" src="images/card4.png" alt="flower">
+                        <h3 class="main__card-title card-title">Fig. 4 (wood)</h3>
+                        <p class="main__card-description card-description">Базовый вектор развития не даёт нам иного выбора, 
+                            кроме определения новых предложений.</p>
+                        <button class="main__card-button card-button">Подробнее</button>
+                    </article>
+                </div>
+
+                <div class="main__slider slider">
+                    <button class="slider__button slider__button_prev" type="button">
+                        <img class="slider__icon" src="images/arrow-left.png" alt="Предыдущий слайд">
+                    </button>
+                    
+                    <span class="slider__pagination">1 из 3</span>
+                    
+                    <button class="slider__button slider__button_next" type="button">
+                        <img class="slider__icon" src="images/arrow-right.png" alt="Следующий слайд">
+                    </button>
+                </div>
+            </section>
+
+            <section class="main__newInfo newInfo">
+                <h2 class="main__newInfo-title">Новые артефакты</h2>
+                <img class="main__newInfo-img" src="images/main-card.png" alt="natural artifacts">
+                <article class="main__newInfo-block">
+                    <h3 class="main__newInfo-subtitle">Kurische Nehrung 24</h3>
+                    <p class="main__newInfo-text">Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет 
+                        срочную потребность методов управления процессами. 
+                        Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
+                    <div class="main__research-block newInfo__research-block research-block">
+                        <a class="main__research-link newInfo__research-link research-link" href="#">Читать далее</a>
+                        <img class="main__research-icon newInfo__research-icon research-icon" src="images/arrow-right.png" alt="link-continue">
+                    </div>
+                </article>
+            </section>
+
+            <section class="main__donate">
+                <h2 class="main__donate-title">Помочь проекту</h2>
+                <p class="main__donate-text">Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса 
+                    профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
+                <form class="main__donate-form form" action="#">
+                    <input class="main__donate-form-name form-name" type="text" placeholder="Имя">
+                    <input class="main__donate-form-email form-email" type="email" placeholder="Email">
+                    <button class="main__donate-form-button form-button">Отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section class="footer__social-media">
+                <span class="footer__youtube youtube"><a href="#"></a></span>
+                <span class="footer__inst inst"><a href="#"></a></span>
+                <span class="footer__facebook facebook"><a href="#"></a></span>
+                <span class="footer__twitter twitter"><a href="#"></a></span>
+            </section>
+        </footer>
+        
+    </div>
 </body>
 </html>
