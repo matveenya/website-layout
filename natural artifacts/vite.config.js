@@ -1,12 +1,13 @@
 import { defineConfig } from "vite";
-const path = require('path');
+import path from 'path';
 
 export default defineConfig({
     build: {
         outDir: 'dist',
         rollupOptions: {
             input: {
-                main: path.resolve(--path.dirname, 'index.html'),
+                main: path.resolve(__dirname, 'index.html'),
+                components: path.resolve(__dirname, 'components.html')
             }
         }
     }
