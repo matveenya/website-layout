@@ -4,6 +4,11 @@
         grid: auto auto / auto 30vw;
         gap: 30px;
 
+        @media(max-width: 950px){
+            display: flex;
+            flex-direction: column;
+        }
+
         &-title{
             grid-column: 1 / 3;
             margin-top: 40px;

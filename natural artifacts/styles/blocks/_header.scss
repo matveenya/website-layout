@@ -6,6 +6,15 @@
     &__logo{
         width: 65px;
         height: 20px;
+
+        @media(max-width: 700px){
+            width: 35px;
+            height: 12px;
+        }
+
+        @media(max-width: 460px){
+            display: none;
+        }
     }
 
     &__navigation{
@@ -21,6 +30,10 @@
 
     &__item{
         padding: 0 20px;
+
+        @media(max-width: 700px){
+            padding: 0 10px;
+        }
     }
 
     &__link{
@@ -41,6 +54,11 @@
     &__search{
         @include header-interactive;
 
+        @media(max-width: 700px){
+            width: 35px;
+            height: 12px;
+        }
+
         &:focus{
             @include focus-element(var(--green-focus));          
         }
@@ -48,6 +66,11 @@
 
     &__exit{
         @include header-interactive;
+
+        @media(max-width: 700px){
+            width: 35px;
+            height: 12px;
+        }
 
         &:focus{
             @include focus-element(var(--green-focus));     
