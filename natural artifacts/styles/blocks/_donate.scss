@@ -1,0 +1,150 @@
+.main{
+    &__donate{
+        position: relative;
+        width: 100vw;
+        height: 450px;
+        margin-left: calc(-50vw + 50%);
+        margin-top: 50px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/donate-background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.7) blur(2px);
+            z-index: -1;
+        }
+
+        &-wrapper{
+            max-width: 1200px;
+            padding: 0 40px;
+            margin: 0 auto;
+        }
+
+        &-title{
+            padding-top: 30px;
+        }
+
+        &-text{
+            max-width: 635px;
+        }
+
+        &-form{
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+
+            &-name{
+                margin-top: 15px;
+                padding: 10px;
+                border: none;
+
+                &:hover{
+                    background-color: #899D9D;
+
+                    &::placeholder{
+                        color: #fff;
+                    }
+                }
+
+                &:focus{
+                    outline: 2px solid #83A440;
+                    outline-offset: 2px;
+                }
+
+                 &:active{
+                    background-color: #899D9D;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder{
+                        color: #0B1919;
+                    }
+                }
+
+                &:disabled{
+                    background-color: #899D9D;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder{
+                        color: #0B1919;
+                    }
+                }
+            }
+
+            &-email{
+                margin-top: 15px;
+                padding: 10px;
+                border: none;
+
+                &:hover{
+                    background-color: #899D9D;
+
+                    &::placeholder{
+                        color: #fff;
+                    }
+                }
+
+                &:focus{
+                    outline: 2px solid #83A440;
+                    outline-offset: 2px;
+                }
+
+                &:active{
+                    background-color: #899D9D;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder{
+                        color: #0B1919;
+                    }
+                }
+
+                &:disabled{
+                    background-color: #899D9D;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder{
+                        color: #0B1919;
+                    }
+                }
+            }
+
+            &-button{
+                margin-top: 15px;
+                padding: 10px;
+                border: none;
+                background-color: #BAE249;
+                color: #0B1919;
+                font-weight: bold;
+                max-width: 175px;
+
+                &:hover{
+                    background-color: #91AC46;
+                }
+
+                &:focus{
+                    outline: 2px solid #83A440;
+                    outline-offset: 2px;
+                }
+
+                &:active{
+                    background-color: #688B05;
+                }
+
+                &:disabled{
+                    background: #1D2F30;
+                    color: #899D9D;
+                }
+            }
+        }
+    }
+}

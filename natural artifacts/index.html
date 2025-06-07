@@ -38,40 +38,51 @@
 
         <main class="main">
             <section class="main__intro">
-                <h1 class="main__title">Крупнейшая коллекция природных артефактов</h1>
-                <p class="main__text">Являясь всего лишь частью общей картины, интерактивные прототипы, 
+                <div class="main__intro-wrapper">
+                    <h1 class="main__title">Крупнейшая коллекция <br> природных артефактов</h1>
+                    <p class="main__text">Являясь всего лишь частью общей картины, интерактивные прототипы, 
                     которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
-                <div class="main__research-block intro__research-block research-block">
-                    <a class="main__research-link intro__research-link research-link" href="#">Исследовать</a>
-                    <img class="main__research-icon intro__research-icon research-icon" src="images/arrow-right.png" alt="link-continue">
+                    <div class="main__research-block intro__research-block research-block">
+                        <a class="main__research-link intro__research-link research-link" href="#">Исследовать
+                            <img class="main__research-icon intro__research-icon research-icon" src="images/arrow-right-research-icon.png" alt="link-continue">
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <section class="main__info-cards">
                 <div class="wrapper">
                     <article class="main__card card">
-                        <img class="main__card-img card-img" src="images/card1.png" alt="flower">
+                        <div class="main__container-card-img">
+                            <img class="main__card-img card-img" src="images/card1.png" alt="flower">
+                        </div>
                         <h3 class="main__card-title card-title">Fig. 1 (plant)</h3>
                         <p class="main__card-description card-description">Имеется спорная точка зрения, гласящая примерно следующее: 
                         активно развивающиеся страны третьего мира своевременно верифицированы.</p>
                         <button class="main__card-button card-button">Подробнее</button>
                     </article>
                     <article class="main__card card">
-                        <img class="main__card-img card-img" src="images/card2.png" alt="flower">
+                        <div class="main__container-card-img">
+                            <img class="main__card-img card-img" src="images/card2.png" alt="flower">
+                        </div>
                         <h3 class="main__card-title card-title">Fig. 2 (flower)</h3>
                         <p class="main__card-description card-description">Прежде всего, синтетическое тестирование влечет за собой процесс 
                             внедрения и модернизации условий.</p>
                         <button class="main__card-button card-button">Подробнее</button>
                     </article>
                     <article class="main__card card">
-                        <img class="main__card-img card-img" src="images/card3.png" alt="flower">
+                        <div class="main__container-card-img">
+                            <img class="main__card-img card-img" src="images/card3.png" alt="flower">
+                        </div>
                         <h3 class="main__card-title card-title">Fig. 3 (leaf)</h3>
                         <p class="main__card-description card-description">Лишь непосредственные участники прогресса неоднозначны и
                              будут в равной степени предоставлены сами себе для работы.</p>
                         <button class="main__card-button card-button">Подробнее</button>
                     </article>
                     <article class="main__card card">
-                        <img class="main__card-img card-img" src="images/card4.png" alt="flower">
+                        <div class="main__container-card-img">
+                            <img class="main__card-img card-img" src="images/card4.png" alt="flower">
+                        </div>
                         <h3 class="main__card-title card-title">Fig. 4 (wood)</h3>
                         <p class="main__card-description card-description">Базовый вектор развития не даёт нам иного выбора, 
                             кроме определения новых предложений.</p>
@@ -80,14 +91,14 @@
                 </div>
 
                 <div class="main__slider slider">
-                    <button class="slider__button slider__button_prev" type="button">
-                        <img class="slider__icon" src="images/arrow-left.png" alt="Предыдущий слайд">
+                    <button class="main__slider-button main__slider-button_prev" type="button">
+                        <img class="main__slider-icon" src="images/arrow-left.png" alt="Предыдущий слайд">
                     </button>
                     
-                    <span class="slider__pagination">1 из 3</span>
+                    <span class="main__slider-pagination">1 из 3</span>
                     
-                    <button class="slider__button slider__button_next" type="button">
-                        <img class="slider__icon" src="images/arrow-right.png" alt="Следующий слайд">
+                    <button class="main__slider-button main__slider-button_next" type="button">
+                        <img class="main__slider-icon" src="images/arrow-right.png" alt="Следующий слайд">
                     </button>
                 </div>
             </section>
@@ -98,24 +109,26 @@
                 <article class="main__newInfo-block">
                     <h3 class="main__newInfo-subtitle">Kurische Nehrung 24</h3>
                     <p class="main__newInfo-text">Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет 
-                        срочную потребность методов управления процессами. 
-                        Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
+                        срочную потребность методов управления процессами.</p>
+                    <p class="main__newInfo-text">Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
                     <div class="main__research-block newInfo__research-block research-block">
                         <a class="main__research-link newInfo__research-link research-link" href="#">Читать далее</a>
-                        <img class="main__research-icon newInfo__research-icon research-icon" src="images/arrow-right.png" alt="link-continue">
+                        <img class="main__research-icon newInfo__research-icon research-icon" src="images/arrow-right-newInfo 1.png" alt="link-continue">
                     </div>
                 </article>
             </section>
 
             <section class="main__donate">
-                <h2 class="main__donate-title">Помочь проекту</h2>
-                <p class="main__donate-text">Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса 
+                <div class="main__donate-wrapper">
+                    <h2 class="main__donate-title">Помочь проекту</h2>
+                    <p class="main__donate-text">Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса 
                     профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
-                <form class="main__donate-form form" action="#">
-                    <input class="main__donate-form-name form-name" type="text" placeholder="Имя">
-                    <input class="main__donate-form-email form-email" type="email" placeholder="Email">
-                    <button class="main__donate-form-button form-button">Отправить</button>
-                </form>
+                    <form class="main__donate-form form" action="#">
+                        <input class="main__donate-form-name form-name" type="text" placeholder="Имя">
+                        <input class="main__donate-form-email form-email" type="email" placeholder="Email">
+                        <button class="main__donate-form-button form-button">Отправить</button>
+                    </form>
+                </div>
             </section>
         </main>
 
@@ -129,5 +142,7 @@
         </footer>
         
     </div>
+
+    <script type="module" src="main.js"></script>
 </body>
 </html>

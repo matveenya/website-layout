@@ -1,0 +1,11 @@
+@import 'global',
+        'normalize',
+        'mixins',
+        'variables';
+
+@import 'blocks/header',
+        'blocks/intro',
+        'blocks/info-cards',
+        'blocks/newInfo',
+        'blocks/donate',
+        'blocks/footer';
