@@ -10,14 +10,14 @@
             &-img{
                 display: flex;
                 padding: 30px;
-                background-color: #0B1919;
+                background-color: var(--dark-color);
                 height: 180px;
             }
         }
     }
 
     &__card{
-        border: 1px solid #0B1919;
+        border: 1px solid var(--dark-color);
         width: 250px;
         margin-top: 60px;
         display: flex;
@@ -29,37 +29,31 @@
         }
 
         &-description{
-            color: #899D9D;
+            color: var(--grey-color);
             padding: 15px;
             flex-grow: 1;
         }
 
         &-button{
             margin: 0 15px 15px 15px;
-            background-color: #1D2F30;
-            color: #BAE249;
-            border: 1px solid #BAE249;
+            background-color: var(--background-color);
+            color: var(--primary-green);
+            border: 1px solid var(--primary-green);
 
             &:hover{
-                background-color: #BAE249;
-                color: #0B1919;
+                @include button-hover(var(--dark-color), var(--primary-green));
             }
 
             &:focus{
-                outline: 1px solid #83A440;
-                outline-offset: 2px;
+                @include button-focus(var(--green-focus));
             }
 
             &:active{
-                background-color: #688B05;
-                color: #0B1919;
-                border: none;
-                outline: none;
+                @include button-active(var(--dark-color), var(--green-active));
             }
 
             &:disabled{
-                border: 1px solid #899D9D;
-                color: #899D9D;
+                @include button-disabled(var(--grey-color));
             }
         }
     }
@@ -70,7 +64,7 @@
         margin-top: 30px;
 
         &-button{
-            background-color:  #1D2F30;
+            background-color:  var(--background-color);
             border: none;
             padding: 0 20px;
         }

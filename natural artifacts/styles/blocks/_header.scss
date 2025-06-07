@@ -25,41 +25,32 @@
 
     &__link{
         &:hover{
-            color: #BAE249;
+            color: var(--primary-green);
         }
 
         &:focus{
-            outline: none;
-            border: 1px solid #83A440;          
+            @include focus-element(var(--green-focus));        
         }
 
         &:active{
-            color: #688B05;
+            color: var(--green-active);
             border: none;
         }
     }
 
     &__search{
-        background-color: #1D2F30;
-        border: none;
-        padding: 0 10px;
-        cursor: pointer;
+        @include header-interactive;
 
         &:focus{
-            outline: none;
-            border: 1px solid #83A440;          
+            @include focus-element(var(--green-focus));          
         }
     }
 
     &__exit{
-        background-color: #1D2F30;
-        border: none;
-        padding: 0 10px;
-        cursor: pointer;
+        @include header-interactive;
 
         &:focus{
-            outline: none;
-            border: 1px solid #83A440;      
+            @include focus-element(var(--green-focus));     
         }
     }
 }

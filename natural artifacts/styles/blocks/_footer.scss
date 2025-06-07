@@ -25,26 +25,18 @@
     }
 
     &__youtube {
-        background-position: -10px -10px;
-        width: 24px;
-        height: 24px;
+        @include social-media-position(-10px, -10px);
     }
 
     &__inst {
-        background-position: -54px -10px;
-        width: 24px;
-        height: 24px;
+        @include social-media-position(-54px, -10px);
     }
 
     &__facebook {
-        background-position: -10px -54px;
-        width: 24px;
-        height: 24px;
+        @include social-media-position(-10px, -54px);
     }
 
     &__twitter {
-        background-position: -54px -54px;
-        width: 24px;
-        height: 24px;
+        @include social-media-position(-54px, -54px);
     }
 }
