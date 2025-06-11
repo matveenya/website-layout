@@ -1,0 +1,44 @@
+@use '../mixins' as *;;
+
+.main{
+    &__registration{
+        background-color: var(--color-secondary);
+        border-radius: 10px;
+        height: 500px; 
+        text-align: center;       
+
+        &-title{
+            color: var(--color-white);
+            padding: 50px 0;
+            margin-top: 70px;
+        }
+
+        &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-input{
+            max-width: 510px;
+            padding: 10px;
+            border: none;
+            background-color: var(--color-secondary);
+            border-bottom: 2px solid var(--color-white);
+            margin: 15px 0;
+            width: 100%;
+            color: var(--color-white);
+
+            &::placeholder{
+                color: var(--color-white);
+            }
+        }
+
+        &-button{
+            @include button-settings(var(--color-white) !important, var(--color-secondary)!important);
+            border-width: 2px !important;
+            max-width: 510px;
+            width: 100%;
+        }
+    }
+}

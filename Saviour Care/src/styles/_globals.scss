@@ -1,0 +1,90 @@
+@use 'mixins' as *;
+
+body{
+    background-color: var(--color-white);
+    font-family: var(--font-family-main);
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--color-text);
+    overflow-x: hidden;
+
+    @media(max-width: 940px){
+        font-size: 12px;
+    }
+}
+
+.container{
+    @include container-settings;
+}
+
+.button{
+    @include button-settings(var(--color-primary), var(--color-white));
+    @include button-state;
+}
+
+.navigation{
+    display: inline-block;
+}
+
+.item{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+    @include link-state;
+}
+
+h1{
+    @include title-settings(var(--color-text-darker), 48px);
+
+    @media(max-width: 940px){
+        @include title-settings(var(--color-text-dark), 36px);
+    }
+}
+
+h2{
+    @include title-settings(var(--color-text-dark), 32px);
+
+    @media(max-width: 940px){
+        @include title-settings(var(--color-text-dark), 24px);
+    }
+}
+
+h3{
+    @include title-settings(var(--color-dark), 24px);
+
+    @media(max-width: 940px){
+        @include title-settings(var(--color-dark), 18px);
+    }
+}
+
+.main{
+    .section{
+        display: flex;
+        justify-content: space-between;
+
+        &__title{
+            margin-top: 120px;
+        }
+
+        &__text{
+            color: var(--color-text);
+        }
+
+        &__button{
+            width: 160px;
+            @include button-settings(var(--color-primary), var(--color-white));
+        }
+
+        .wrapper-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+    }
+}

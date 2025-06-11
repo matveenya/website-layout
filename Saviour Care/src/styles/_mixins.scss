@@ -1,0 +1,54 @@
+@mixin button-settings($color, $background-color){
+    color: $color;
+    background-color: $background-color;
+    border: 1px solid $color;
+    border-radius: 55px;
+    font-weight: 700;
+    padding: 15px;
+    cursor: pointer;
+}
+
+@mixin button-state{
+    &:hover{
+        opacity: .5;
+    }
+
+    &:active{
+        transform: scale(.9);
+        transition: transform .5s;
+        opacity: 1;
+    }
+}
+
+@mixin link-state{
+    &:hover{
+        color: var(--color-primary-dark);
+        border-bottom: 1px solid var(--color-primary-dark);
+    }
+
+    &:active{
+        opacity: .7;
+    }
+}
+
+@mixin title-settings($color, $size){
+    color: $color;
+    font-size: $size;
+}
+
+@mixin container-settings{
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+@mixin wrapper-container($background){
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $background;
+    margin-left: calc(-50vw + 50%);
+    z-index: -1;
+}

@@ -1,0 +1,52 @@
+@use '../mixins' as *;
+
+.main{
+    &__intro{
+        display: flex;
+        justify-content: space-between;
+
+        &-title{
+            margin-top: 120px;
+        }
+
+        &-text{
+            flex-grow: 1;
+            margin-top: 20px;
+            color: var(--color-primary-light);
+
+            @media(max-width: 1060px){
+                margin-top: 0;
+            }
+        }
+
+        &-img{
+            margin-top: 90px;
+
+            @media(max-width: 1060px){
+                width: 500px;
+                height: auto;
+            }
+
+            @media(max-width: 940px){
+                width: 300px;
+                height: auto;
+            }
+
+            @media(max-width: 560px){
+                display: none;
+            }
+        }
+
+        &-button{
+            width: 160px;
+            @include button-settings(var(--color-white), var(--color-primary));
+        }
+
+        .wrapper-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 20px;
+        }
+    }
+}
