@@ -1,0 +1,31 @@
+@use '../mixins' as *;
+
+.main {
+    &__actions {
+        &-title {
+            margin-bottom: var(--space-xl);
+        }
+
+        &-form {
+            max-width: var(--form-elem-width);
+            margin: auto;
+        }
+
+        &-button {
+            display: block;
+            margin-left: auto;
+        }
+
+        .form {
+            &-elem {
+                &__container {
+                    label {
+                        display: inline-block;
+                        font-size: var( --font-size-md);
+                        padding: var(--space-xs) 0;
+                    }
+                }
+            }
+        }
+    }
+}

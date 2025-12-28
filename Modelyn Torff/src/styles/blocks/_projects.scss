@@ -1,0 +1,18 @@
+@use '../mixins' as *;
+
+.main {
+    &__projects {
+        max-width: var(--projects-block-width);
+        margin: auto;
+
+        &-title {
+            margin: calc(var(--space-3xl) * 1.5) 0;
+        }
+    }
+
+    &__card {
+        &-wrapper {
+            @include d-flex(column, nowrap, space-between);
+        }
+    }
+}

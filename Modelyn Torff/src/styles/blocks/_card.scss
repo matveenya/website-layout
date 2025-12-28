@@ -1,0 +1,36 @@
+@use '../mixins' as *;
+
+.main {
+    &__card {
+        @include d-flex(row, nowrap, space-between);
+        background-color: var(--color-bg-card);
+        margin-bottom: calc(var(--space-3xl) * 1.5);
+
+        &-info { 
+            @include d-flex(column, nowrap, center, flex-start);
+            gap: var(--space-xl);
+            padding: 0 var(--space-xl);
+        }
+
+        &-title {
+            font-size: var(--font-size-6xl);
+            font-family: var(--font-family-heading);
+            font-weight: var(--font-weight-bold);
+        }
+
+        &-text {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-secondary);
+        }
+
+        &-button {
+            border-radius: var(--radius-xl) !important;
+            align-self: flex-start;
+            padding: var(--space-2xs) var(--space-lg) !important;
+        }
+
+        &-image {
+            margin-left: auto;
+        }
+    }
+}

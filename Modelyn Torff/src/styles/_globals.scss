@@ -1,0 +1,81 @@
+@use 'mixins' as *;
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-lg);
+
+    .container {
+        max-width: var(--container-width);
+        width: 100%;
+        margin: auto;
+        padding: 0 var(--space-sm);
+    }
+
+    .link {
+        text-decoration: none;
+        color: var(--color-text-primary);
+    }
+
+    .navigation {
+        @include d-flex(row, nowrap, space-between, center);
+    }
+
+    textarea {
+        max-width: var(--form-elem-width);
+        width: 100%;
+        resize: none;
+        border-radius: var(--radius-md);
+        border-color: var(--color-border-light);
+    }
+
+    input {
+        max-width: var(--form-elem-width);
+        width: 100%;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--color-border-light);
+    }
+
+    h1 {
+        font-size: calc(var(--font-size-4xl) * 2);
+        font-family: var(--font-family-heading);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-heading);
+    }
+
+    .button {
+        background-color: transparent;
+        padding: var(--space-2xs) var(--space-md);
+        border: 2px solid var(--color-border-primary);
+        border-radius: var(--radius-md);
+        cursor: pointer;
+
+        &_yellow {
+            background-color: var(--color-button-bg);
+            border-color: transparent;
+            font-weight: var(--font-weight-medium);
+        }
+    }
+
+    .projects {
+        &-title {
+            position: relative;
+            font-size: calc(var(--font-size-2xl) * 2);
+            font-family: var(--font-family-heading);
+            font-weight: var(--font-weight-bold);
+            text-align: center;
+
+            &::after {
+                display: block;
+                content: " ";
+                position: absolute;
+                top: calc(var(--space-2xl) * 1.5);
+                left: calc(50% - calc(var(--font-size-6xl) * 1.5));
+                background-color: var(--color-bg-accent);
+                height: calc(var(--font-size-xs) / 3.5);
+                width: calc(var(--font-size-6xl) * 3);
+            }
+        }
+    }
+}

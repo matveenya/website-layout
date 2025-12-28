@@ -1,0 +1,12 @@
+@use 'normalize';
+@use 'mixins';
+@use 'globals';
+@use 'variables';
+@use 'fonts';
+
+@use 'blocks/header';
+@use 'blocks/intro';
+@use 'blocks/projects';
+@use 'blocks/card';
+@use 'blocks/actions';
+@use 'blocks/footer';

@@ -1,0 +1,62 @@
+@use '../mixins' as *;
+
+.footer {
+
+    &__social {
+        &-media {
+            @include d-flex(row, nowrap, center, center);
+            text-align: center;
+            padding-top: var(--space-2xl);
+        }
+    }
+
+    .icon {
+        a:link, a:visited {
+            display: block;
+            text-indent: -9999px;
+            background-image: url(/src/images/css_sprites.png);
+            background-repeat: no-repeat;
+            padding: 0 var(--space-xl);
+        }
+    }
+
+    &__inst {
+        a:link, a:visited {
+            width: calc(var(--font-size-2xl) * 2); 
+            height: calc(var(--font-size-2xl) * 2);
+            background-position:  -10px -10px;
+        }
+    }
+
+    &__linkedin {
+        a:link, a:visited {
+            width: calc(var(--font-size-2xl) * 2); 
+            height: calc(var(--font-size-2xl) * 2);
+            background-position:  -77px -5px;
+        }
+    }
+
+    &__email {
+        a:link, a:visited {
+            width: calc(var(--font-size-2xl) * 2); 
+            height: calc(var(--font-size-2xl) * 2);
+            background-position:  -10px -70px;
+        }
+    }
+
+    .footer__image-container {
+        display: block;
+        position: absolute;
+        margin-right: auto;
+        right: 0;
+        margin-left: auto;
+        left: 0;
+        z-index: -1;
+    }
+
+    .footer__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

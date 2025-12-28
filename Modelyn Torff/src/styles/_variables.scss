@@ -1,0 +1,58 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-bg-main: #f9faff;
+    --color-bg-card: #ffffff;
+    --color-bg-accent: #fdc435;
+
+    --color-text-primary: #25282b;
+    --color-text-secondary: #828282;
+    --color-text-heading: #333333;
+    --color-text-accent: #fdc435;
+
+    --color-border-primary: #25282b;
+    --color-border-light: #E8ECF4;
+
+    --color-button-bg: #fdc435;
+    --color-button-text: #25282b;
+
+    --font-family-base: 'Nunito', sans-serif;
+    --font-family-heading: 'Playfair Display', serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px; 
+    --font-size-lg: 18px; 
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 28px;
+    --font-size-4xl: 32px;
+    --font-size-5xl: 36px;
+    --font-size-6xl: 40px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    --container-width: 1200px;
+    --intro-block-width: 490px;
+    --intro-block-height: 580px;
+    --projects-block-width: 900px;
+    --form-elem-width: 400px;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+}

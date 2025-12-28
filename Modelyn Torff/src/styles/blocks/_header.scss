@@ -1,0 +1,24 @@
+@use '../mixins' as *;
+
+.header {
+    @include d-flex(row, nowrap, space-between, center);
+
+    &__logo {
+        &-text {
+            padding: var(--space-sm) 0;
+        }
+    }
+
+    &__navigation {
+        margin-left: auto;
+        padding: var(--space-sm) 0;
+    }
+
+    &__list {
+        @include d-flex( row, nowrap, space-between, center);
+    }
+
+    &__item {
+        padding-left: var(--space-2xl);
+    }
+}

@@ -1,0 +1,46 @@
+@use '../mixins' as * ;
+
+.main {
+    &__intro {
+        @include d-flex(row, nowrap, space-between, center);
+        height: var(--intro-block-height);
+
+        &-block {
+            @include d-flex(column, nowrap , space-between, space-between);
+            width: 100%;
+            max-width: var(--intro-block-width);
+            height: calc(var(--intro-block-height) * 0.7);
+            margin-bottom: var(--space-3xl);
+        }
+
+        &-subtitle {
+            color: var( --color-text-accent);
+            font-size: var(--font-size-xl);
+        }
+
+        &-text {
+            font-size: var(--font-size-2xl);
+            color: var(--color-text-secondary);
+            padding: var(--space-lg) 0;
+        }
+
+        &-button {
+            margin-left: var(--space-sm);
+        }
+
+        &-image {
+            position: absolute;
+            top: 0;
+            margin-right: auto;
+            right: 0;
+            z-index: -1;
+
+            &_about {
+                display: block;
+                margin-left: auto;
+                margin-right: 0;
+                position: static;
+            }
+        }
+    }
+}
