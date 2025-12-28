@@ -11,6 +11,10 @@ body {
         width: 100%;
         margin: auto;
         padding: 0 var(--space-sm);
+
+        @include respond-to("mobile") {
+            padding: 0 var(--space-2xs);
+        }   
     }
 
     .link {
@@ -42,6 +46,14 @@ body {
         font-family: var(--font-family-heading);
         font-weight: var(--font-weight-bold);
         color: var(--color-text-heading);
+
+        @include respond-to("tablet") {
+            font-size: var(--font-size-6xl);
+        }
+
+        @include respond-to("mobile") {
+            font-size: var(--font-size-4xl);
+        }
     }
 
     .button {
@@ -76,6 +88,15 @@ body {
                 height: calc(var(--font-size-xs) / 3.5);
                 width: calc(var(--font-size-6xl) * 3);
             }
+
+            @include respond-to("mobile") {
+            font-size: var(--font-size-4xl);
+            
+            &::after {
+                left: calc(50% - 50px);
+                width: 100px;
+            }
+        }
         }
     }
 }

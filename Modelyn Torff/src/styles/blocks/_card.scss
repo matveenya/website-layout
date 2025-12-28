@@ -6,16 +6,32 @@
         background-color: var(--color-bg-card);
         margin-bottom: calc(var(--space-3xl) * 1.5);
 
+        @include respond-to("tablet") {
+            flex-direction: column;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: var(--space-3xl);
+        }
+
         &-info { 
             @include d-flex(column, nowrap, center, flex-start);
             gap: var(--space-xl);
             padding: 0 var(--space-xl);
+
+            @include respond-to("tablet") {
+                padding: var(--space-lg);
+                order: 2;
+            }
         }
 
         &-title {
             font-size: var(--font-size-6xl);
             font-family: var(--font-family-heading);
             font-weight: var(--font-weight-bold);
+
+            @include respond-to("mobile") {
+                font-size: var(--font-size-3xl);
+            }
         }
 
         &-text {
@@ -31,6 +47,19 @@
 
         &-image {
             margin-left: auto;
+
+            @include respond-to("tablet") {
+                margin-left: 0;
+                width: 100%;
+                order: 1;
+            }
+
+            @include respond-to("mobile") {
+                height: calc(var(--card-image-width-mobile) / 2);
+                margin-left: 0;
+                width: 100%;
+                order: 1;
+            }
         }
     }
 }

@@ -6,12 +6,20 @@
     &__logo {
         &-text {
             padding: var(--space-sm) 0;
+
+            @include respond-to("mobile") {
+                display: none;
+            }
         }
     }
 
     &__navigation {
         margin-left: auto;
         padding: var(--space-sm) 0;
+
+        @include respond-to("mobile") {
+            margin: auto;
+        }
     }
 
     &__list {
@@ -20,5 +28,9 @@
 
     &__item {
         padding-left: var(--space-2xl);
+
+        @include respond-to("mobile") {
+            padding-left: var(--space-md);
+        }
     }
 }

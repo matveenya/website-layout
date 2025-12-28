@@ -9,6 +9,10 @@
         &-form {
             max-width: var(--form-elem-width);
             margin: auto;
+
+            @include respond-to("mobile") {
+                max-width: calc(var(--form-elem-width) / 2);
+            }
         }
 
         &-button {
